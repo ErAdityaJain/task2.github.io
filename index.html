@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Append Elements</title>
+	<head>
+	
+	<body>
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		
+		<button type="button" id="add_li" name="Add">
+			Add List
+		</button>
+		
+		<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		
+		<!-- Script to use append method to add list -->
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$("#add_li").click( function() {
+					$("ol").append("<li></li>")
+				})
+			})
+		</script>
+	</body>
+</html>
